@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js" defer></script>
+
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body class="bg-[#141518]">
+
+  <div class="w-[350px] h-auto rounded-xl mx-auto mt-[160px] bg-gradient-to-b from-[#444A54] to-[#1C222C]">
+      <div id="hide" class="pt-5 ">
+          <div class="w-[35px] h-[35px] bg-[#555B65] rounded-full flex justify-center ml-5">
+            <img src="./images/icon-star.svg" width="15" height="15" alt="">
+          </div>
+          <div class="ml-5 mt-3 float-left">
+             <p class="text-white font-bold text-[20px]">How did we do?</p>
+             <p class="text-slate-300 text-[12px] mt-3 w-[300px]">  Please let us know how we did with your support request. All feedback is appreciated 
+              to help us improve our offering!</p>
+        </div>
+        <div class="float-left flex space-x-3 items-center ml-[50px] mt-3 mb-4">
+          <button id="one" class="bg-[#5F686F] w-[35px] h-[35px] rounded-full text-slate-200 hover:bg-orange-500">1</button>
+          <button id="two" class="bg-[#5F686F] w-[35px] h-[35px] rounded-full text-slate-200 hover:bg-orange-500">2</button>
+          <button id="three" class="bg-[#5F686F] w-[35px] h-[35px] rounded-full text-slate-200 hover:bg-orange-500">3</button>
+          <button id="four" class="bg-[#5F686F] w-[35px] h-[35px] rounded-full text-slate-200 hover:bg-orange-500">4</button>
+          <button id="five" class="bg-[#5F686F] w-[35px] h-[35px] rounded-full text-slate-200 hover:bg-orange-500">5</button>
+        </div>
+        <div class="ml-6">
+          <button id="submit" class="w-[300px] h-7 bg-orange-500 rounded-xl text-white font-bold hover:bg-white 
+          hover:text-orange-500 mb-7">SUBMIT</button>
+       </div>
+      </div>
+
+      <!--Thank you state-->
+      <div id="thankYou" class="text-center pb-7 hidden">
+        <img src="./images/illustration-thank-you.svg" alt="" width="120px" height="120px" class="mx-auto pt-7">
+        <p id="rating" class="text-orange-500 rounded-full bg-slate-600 w-[200px] ml-[80px] mt-5 ">You Selected 4 out of 5</p>
+        <p class="font-bold text-white text-[25px] mt-3">Thank you!</p>
+        <p id="rating" class="text-[12px] text-slate-300 w-[290px] ml-6 mt-2">  We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>
+      </div>
+  </div>  
+  <div class="attribution text-white mt-10">
+    Challenge by <a  href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mateusz Kroplewski</a>.
+  </div>
+</body>
+</html>
